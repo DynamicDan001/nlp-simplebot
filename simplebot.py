@@ -39,7 +39,6 @@ def create_and_insert_user_frame(user_input):
   chatWindow.insert('end', '\n ', 'tag-right')
   chatWindow.window_create('end', window=userFrame)
 
-
 def create_and_insert_bot_frame(bot_response):
   botFrame = Frame(chatWindow, bg="#ffffd0")
   Label(
@@ -126,3 +125,5 @@ def get_bot_response(user_input):
 
     bot_response = response.choices[0].text.strip()
     return bot_response
+
+
